@@ -37,6 +37,8 @@ double mixingTimer = 0;
 double timeOfTest = 5;
 bool mixingTest = false;
 
+
+
 //////////// ПРОВЕРКА МОТОРОВ ///////////
 bool pump_test = false;
 bool pump_switcher = false;
@@ -105,10 +107,12 @@ void loop(){
       digitalWrite(pumps[3], LOW);
       Serial.println("Mixing test success!");
     }else{
-      digitalWrite(pumps[0], HIGH);
-      digitalWrite(pumps[1], HIGH);
-      digitalWrite(pumps[2], HIGH);
-      digitalWrite(pumps[3], HIGH);
+    
+        digitalWrite(pumps[0], HIGH);
+        digitalWrite(pumps[1], HIGH);
+        digitalWrite(pumps[2], HIGH);
+        digitalWrite(pumps[3], HIGH);
+     
      }         
   }
     
